@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos de la tarjeta */
+.card {
+
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        max-width: 320px;
+        text-align: center;
+    }
+
+/* Estilos de la imagen del código QR */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos del texto */
+.card h1 {
+    font-size: 22px;
+    color: hsl(218, 44%, 22%);
+    margin: 20px 0;
+}
+
+.card p {
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+    margin: 0 0 20px;
+}
+
+/*mq para movil 375px y escritorio 1440px*/
+@media (max-width: 375px) {
+    .card {
+        max-width: 90%;
+        /* La tarjeta ocupa el 90% del ancho en móvil */
+        padding: 12px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+        /* Tamaño de fuente más pequeño para móvil */
+    }
+
+    .card p {
+        font-size: 14px;
+        /* Tamaño de fuente más pequeño para móvil */
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        max-width: 350px;
+        /* Aumentamos el ancho de la tarjeta */
+        padding: 20px;
+    }
+
+    .card h1 {
+        font-size: 24px;
+        /* Tamaño de fuente más grande para escritorio */
+    }
+
+    .card p {
+        font-size: 16px;
+        /* Tamaño de fuente más grande para escritorio */
+    }
+}
